@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Page - {{version}}</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        .header {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .content {
+            margin-top: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to My Website</h1>
+    </div>
+    <div class="content">
+        <p>This is a version-controlled sample page. Current version: {{version}}</p>
+        <button onclick="displayAlert()">Click Me!</button>
+    </div>
+
+    <script>
+        function displayAlert() {
+            alert("You clicked the button on version {{version}}!");
+        }
+    </script>
+</body>
+</html>
